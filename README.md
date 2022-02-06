@@ -1,18 +1,18 @@
 # Predykcja zapalenia wątroby typu C u pacjentów za pomocą Apache Spark
 # Wstęp 
 Wątroba to organ, który ma szczególną budowę anatomiczną i pełni wiele różnych funkcji, bez których organizm człowieka nie mógłby sobie poradzić. W wątrobie:
-•	zachodzą przemiany najważniejszych składników odżywczych, czyli białek, tłuszczów, węglowodanów, witamin i składników mineralnych
-•	wytwarzana jest żółć, która jest niezbędna w procesie trawienia i wchłaniania tłuszczów w przewodzie pokarmowym
-•	wytwarzany jest cholesterol
-•	zachodzą procesy kluczowe w metabolicznej aktywacji witaminy D
-•	neutralizowane są różne toksyny
-•	magazynowane są podstawowe składniki odżywcze, witaminy A, D, B12 i ferrytyna (białko, które magazynuje żelazo w organizmie)
-•	pełnione są funkcje immunologiczne.
+*	zachodzą przemiany najważniejszych składników odżywczych, czyli białek, tłuszczów, węglowodanów, witamin i składników mineralnych
+*	wytwarzana jest żółć, która jest niezbędna w procesie trawienia i wchłaniania tłuszczów w przewodzie pokarmowym
+*	wytwarzany jest cholesterol
+*	zachodzą procesy kluczowe w metabolicznej aktywacji witaminy D
+*	neutralizowane są różne toksyny
+*	magazynowane są podstawowe składniki odżywcze, witaminy A, D, B12 i ferrytyna (białko, które magazynuje żelazo w organizmie)
+*	pełnione są funkcje immunologiczne.
 Do głównych czynników powodujących uszkodzenie wątroby, które mogą prowadzić do dysfunkcji tego narządu, zaliczamy:
-•	przewlekłe zakażenie wirusem HBV lub HCV (wirusowe zapalenie wątroby typu B i C)
-•	nadmierne spożywanie alkoholu (alkoholowa marskość wątroby)
-•	otyłość i zespół metaboliczny prowadzące do stłuszczenia wątroby (niealkoholowa stłuszczeniowa choroba wątroby).
-•	uszkodzenie miąższu wątroby skutkujące tworzeniem się guzków regeneracyjnych i przemianą struktury tego narządu (zwłóknienie wątroby)
+*	przewlekłe zakażenie wirusem HBV lub HCV (wirusowe zapalenie wątroby typu B i C)
+*	nadmierne spożywanie alkoholu (alkoholowa marskość wątroby)
+*	otyłość i zespół metaboliczny prowadzące do stłuszczenia wątroby (niealkoholowa stłuszczeniowa choroba wątroby).
+*	uszkodzenie miąższu wątroby skutkujące tworzeniem się guzków regeneracyjnych i przemianą struktury tego narządu (zwłóknienie wątroby)
 Przeszczep wątroby jest często metodą z wyboru leczenia niektórych chorób, a czasami jedynym sposobem ich wyleczenia. Do przeszczepu wątroby kwalifikuje się chorych z poważnymi chorobami wątroby, którzy mają mniej niż 90% szans na przeżycie roku. Większość chorób wątroby może prowadzić do marskości i to właśnie ona jest głównym wskazaniem do zabiegu. Podczas przetaczania krwi oraz transplantacji (po sprawdzeniu stanu organu), najgroźniejszymi czynnikami przenoszonymi przez krew są: wirus upośledzenia odporności (HIV), wirus zapalenie wątroby typu C (HCV) lub wirus zapalenia wątroby typu B (HBV) – zakażenia początkowo mogą być bezobjawowe, a w dalszej perspektywie mogą prowadzić do przewlekłego stanu zapalnego, a następnie zwłóknienia i marskości wątroby, które są poważnymi chorobami. Aby uniknąć transfuzji od niepożądanego dawcy, stacje krwiodawstwa oraz szpitale przed pobraniem krwi do transfuzji  sprawdzają parametry krwi dawcy. Badanie morfologii krwi i moczu dają dużo informacji, ale aby ocenić funkcję i uszkodzenie wątroby dodatkowo wykonuje się inne badania laboratoryjne, m.in. testy świadczące o uszkodzeniu komórek wątroby(hepatocytów) i testy określające funkcję wątroby. 
 # Cel
 Firma Analit specjalizująca się w analizach laboratoryjnych dla szpitali zleciła mi opracowanie modelu szybkiego wykrywania zapalenia wątroby typu C u pacjentów. Podstawowym założeniem firmy Analit jest, że uda się opracować model uczenia maszynowego, który skutecznie przewidzi brak przeciwwskazań do pobrania krwi oraz transplantacji wątroby, jedynie na podstawie badania krwi potencjalnego dawcy. Umożliwi to zaoszczędzenie czasu oraz środków pieniężnych (kolejne analizy będą wtedy zbędne) w przypadkach pilnego wykonania przeszczepu wątroby lub wykonania szybkiej transfuzji krwi. Ponadto, dzięki modelowi pacjenci nieświadomi dysfunkcji swojej wątroby będą mogli być szybciej zdiagnozowani i mogą poddać się szybciej leczeniu lub dalszym badaniom ukierunkowanym na choroby wątroby.
