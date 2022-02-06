@@ -40,15 +40,25 @@ Kolumna Age określa wiek pacjenta (w latach), a kolumna Sex określa płeć (�
 Kolejne kolumny zawierają stężenia produktów syntetyzowanych w wątrobie lub innych składników krwi, które są ważne dla oceny stanu wątroby. Wszystkie stężenia są w g/l, oprócz cholinesterazy (w g/ml), cholersterolu (w  mmol/l), kreatyniny oraz bilirubiny (w µmol/l):
 
 a) ALB – albumina (białko syntetyzowane w wątrobie)
+
 b) ALP - fosfataza zasadowa (enzym związany z nabłonkiem wątroby)
+
 c) ALT -  aminotransferaza alaninowa (enzym syntetyzowany w wątrobie)
+
 d) AST - aminotransferaza asparaginianowa (enzym syntetyzowany w wątrobie)
+
 e) BIL - bilirubina (produkt rozpadu hemoglobiny, którego dezaktywacją zajmuje się wątroba)
+
 f) CHE – cholinoesteraza (enzym syntetyzowany w wątrobie)
+
 g) CHOL – cholersterol (prekursor m.in. hormonów steroidowych, kwasów żółciowych i witaminy D)
+
 h) CREA – kreatynina (metabolit białka, syntetyzowany w wątrobie)
+
 i) GGT - gamma-glutamylotransferaza (enzym związany z nabłonkiem wątroby)
+
 j) PROT – białko całkowite we krwi
+
 
 W dalszej analizie nie jest potrzebny mi ID pacjenta, zatem usuwam tę kolumnę.
 Ramka danych wygląda następująco:
@@ -73,13 +83,13 @@ Przygotowując dane do wszystkich wektoryzacji wartości ze wszystkich kolumn dl
 Nie mam wartosci null jako takich, ale jeszcze zamienie wartosci NA na 0.
 
 <p align="center">
-<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/ null2.JPG" />
+<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/null2.JPG" />
 </p>
 
 Z uwagi na operację wektoryzacji sprawdzam też typy danych.
 
 <p align="center">
-<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/ typy.JPG" />
+<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/typy.JPG" />
 </p>
 
 Wszystkie dane są niestety stringami, łącznie z poszczególnymi stężeniami zbadanych parametrów krwi. Muszę zamienić kategorie oraz płeć na int, a resztę na float.
@@ -105,7 +115,7 @@ Po konwersji z powrotem do ramki danych Sparka ramka wygląda następująco:
 
 
 <p align="center">
-<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/ df_2.JPG" />
+<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/df_2.JPG" />
 </p>
 
 
@@ -113,14 +123,14 @@ Znów sprawdzam typy danych.
 
 
 <p align="center">
-<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/ typy_2.JPG" />
+<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/typy_2.JPG" />
 </p>
 W kolejnym kroku zamieniam następnie kolumny ze stężeniami na float, wiek na int, podobnie jak w poprzednich krokach.</br>
 Na koniec sprawdzam znów typy danych, by upewnić się, że są gotowe do wektoryzacji.
 
 
 <p align="center">
-<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/ typt_final.JPG" />
+<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/typt_final.JPG" />
 </p>
 
 ## Wektoryzacja
@@ -129,14 +139,14 @@ Wybieram wszystkie kolumny, a następnie korzystam z pakietu VectorAssembler.
 
 
 <p align="center">
-<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/ vectorizing.JPG" />
+<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/vectorizing.JPG" />
 </p>
 
 Do ramki danych dodaję kolumnę ze stworzonymi wektorami.
 
 
 <p align="center">
-<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/ vectors.JPG" />
+<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/vectors.JPG" />
 </p>
 
 
@@ -146,7 +156,7 @@ Dzielę ramkę danych z wektorami na zbiór testowy i treningowy w proporcji 3:7
 
 
 <p align="center">
-<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/ train.JPG" />
+<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/train.JPG" />
 </p>
 
 
@@ -154,7 +164,7 @@ Importuję moduły regresji logistycznej i drzewa decyzyjnego z pakietu metod kl
 
 
 <p align="center">
-<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/ models.JPG" />
+<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/models.JPG" />
 </p>
 
 
@@ -162,7 +172,7 @@ Przewidywane wartości wyglądają następująco:
 
 
 <p align="center">
-<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/ pred.JPG" />
+<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/pred.JPG" />
 </p>
 
 ## Ocena modelu
@@ -170,7 +180,7 @@ Przewidywane wartości wyglądają następująco:
 Do oceny modelu zmieniam typ danych w kolumnie "Category" na double, bo inaczej  moduł oceny klasyfikacji nie porówna różnych typów liczbowych
 
 <p align="center">
-<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/ casting.JPG" />
+<img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/casting.JPG" />
 </p>
 
 Za pomocą modułu MulticlassClassificationEvaluator porównuję kolumny ‘Category’ i  'prediction', a następnie obliczam parametry mojego modelu (wybieram te kolumny z  pred_y):
