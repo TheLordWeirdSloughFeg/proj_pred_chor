@@ -59,7 +59,7 @@ i) GGT - gamma-glutamylotransferaza (enzym związany z nabłonkiem wątroby)
 
 j) PROT – białko całkowite we krwi
 </br>
-
+</br>
 W dalszej analizie nie jest potrzebny mi ID pacjenta, zatem usuwam tę kolumnę.
 Ramka danych wygląda następująco:
 
