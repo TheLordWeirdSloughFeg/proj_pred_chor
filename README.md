@@ -100,6 +100,7 @@ Wszystkie dane są niestety stringami, łącznie z poszczególnymi stężeniami 
 
 Aby tego dokonać muszę zamienić ramkę danych zgodną ze Sparkiem na ramkę z pakietu Pandas , zamienić na następnie ponownie utworzyć ramkę zgodną z PySparkiem.</br>
 Znajduję unikalne wartości kolumn Category i Sex, a następnie zamieniam na cyfry w następujący sposób:
+
 a) 'Category'
 
 * '0=Blood Donor' (zdrowy dawca krwi) na 0
@@ -109,8 +110,9 @@ a) 'Category'
 * '3=Cirrhosis' (pacjent chory na marskość wątroby oraz zapalenie wątroby typu C) na 4
 
 b) 'Sex'
-•	m (mężczyzna) na 0 
-•	f (kobieta) na 1
+
+*	m (mężczyzna) na 0 
+*	f (kobieta) na 1
 
 Po konwersji z powrotem do ramki danych Sparka ramka wygląda następująco:
 
@@ -190,5 +192,5 @@ Za pomocą modułu MulticlassClassificationEvaluator porównuję kolumny ‘Cate
 <img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/Ocena%20modelu.JPG" />
 </p>
 
-#Wnioski
+# Wnioski
 Dokładność wyniosła ok. 0.98, precyzja 1.00, recall ok. 0.99, a współczynnik F1 ok. 0.99. Model predykcji jest idealny do wykrywania wirusowego zapalenia wątroby typu C na podstawie zbadanych parametrów krwi, wieku oraz płci, ale może nie nadawać się do np. predykcji innych chorób wątroby. W oparciu o ten model i dane z wszystkich punktów firmy <b>Analit</b> można opracować kolejne modele przewidujące inne choroby wątroby, np. marskość lub zwłóknienie wątroby, pomagając szybciej diagnozować pacjentów.
