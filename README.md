@@ -193,4 +193,4 @@ Za pomocą modułu MulticlassClassificationEvaluator porównuję kolumny ‘Cate
 </p>
 
 # Wnioski
-Dokładność wyniosła ok. 0.98, precyzja 1.00, recall ok. 0.99, a współczynnik F1 ok. 0.99. Model predykcji jest idealny do wykrywania wirusowego zapalenia wątroby typu C na podstawie zbadanych parametrów krwi, wieku oraz płci, ale może nie nadawać się do np. predykcji innych chorób wątroby. W oparciu o ten model i dane z wszystkich punktów firmy <b>Analit</b> można opracować kolejne modele przewidujące inne choroby wątroby, np. marskość lub zwłóknienie wątroby, pomagając szybciej diagnozować pacjentów.
+Dokładność wyniosła ok. <b>0.98</b>, precyzja <b>1.00</b>, recall ok. <b>0.99</b>, a współczynnik F1 ok. <b>0.99</b>. Model predykcji jest idealny do wykrywania wirusowego zapalenia wątroby typu C na podstawie zbadanych parametrów krwi, wieku oraz płci, ale może nie nadawać się do np. predykcji innych chorób wątroby. W oparciu o ten model i dane z wszystkich punktów firmy <b>Analit</b> można opracować kolejne modele przewidujące inne choroby wątroby, np. marskość lub zwłóknienie wątroby, pomagając szybciej diagnozować pacjentów.
