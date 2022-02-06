@@ -29,13 +29,16 @@ Wczytuję dane udostępnione mi przez firmę <b>Analit</b> w formie pliku .csv.
   <img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/df.JPG" />
 </p>
 Dane zawierają pacjentów o unikalnym numerze pacjenta (kolumna „_c0”), kolumnę diagnoza (Category), w której są 4 wartości:
+
 * '0=Blood Donor' – zdrowy dawca krwi
 * '0s=suspect Blood Donor' – dawca krwi, u którego istnieje podejrzenie występowania zapalenia wątroby typu C
 * '1=Hepatitis' – pacjent chory na jedynie zapalenie wątroby typu C
 * '2=Fibrosis' – pacjent chory na zwłóknienie wątroby oraz zapalenie wątroby typu C
 * '3=Cirrhosis' – pacjent chory na marskość wątroby oraz zapalenie wątroby typu C
+
 Kolumna Age określa wiek pacjenta (w latach), a kolumna Sex określa płeć (‘f’ - kobieta, ‘m’ -mężczyczna).
 Kolejne kolumny zawierają stężenia produktów syntetyzowanych w wątrobie lub innych składników krwi, które są ważne dla oceny stanu wątroby. Wszystkie stężenia są w g/l, oprócz cholinesterazy (w g/ml), cholersterolu (w  mmol/l), kreatyniny oraz bilirubiny (w µmol/l):
+
 a) ALB – albumina (białko syntetyzowane w wątrobie)
 b) ALP - fosfataza zasadowa (enzym związany z nabłonkiem wątroby)
 c) ALT -  aminotransferaza alaninowa (enzym syntetyzowany w wątrobie)
