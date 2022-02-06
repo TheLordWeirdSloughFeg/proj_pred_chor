@@ -81,7 +81,7 @@ Przygotowując dane do wszystkich wektoryzacji wartości ze wszystkich kolumn dl
 <img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/null.JPG" />
 </p>
 
-Nie mam wartosci null jako takich, ale jeszcze zamienię wartości NA na 0.
+Nie mam wartości null jako takich, ale jeszcze zamienię wartości NA na 0.
 
 <p align="center">
 <img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/null2.JPG" />
