@@ -58,7 +58,7 @@ h) CREA – kreatynina (metabolit białka, syntetyzowany w wątrobie)
 i) GGT - gamma-glutamylotransferaza (enzym związany z nabłonkiem wątroby)
 
 j) PROT – białko całkowite we krwi
-
+</br>
 
 W dalszej analizie nie jest potrzebny mi ID pacjenta, zatem usuwam tę kolumnę.
 Ramka danych wygląda następująco:
@@ -73,7 +73,8 @@ Sprawdzam jak zbalansowany jest zbiór danych w zależności od kategorii:
   <img src="https://github.com/TheLordWeirdSloughFeg/proj_pred_chor/blob/main/obrazki/balanced.JPG" />
 </p>
 
-Jak widać najwięcej jest zdrowych dawców, co może oznaczać, że są świadomi swojego zdrowia.</br>
+Jak widać najwięcej jest zdrowych dawców, co może oznaczać, że są świadomi swojego zdrowia.</br></br>
+
 Przygotowując dane do wszystkich wektoryzacji wartości ze wszystkich kolumn dla każdego pacjenta sprawdzam spójność danych, tj. czy zawierają one wartości null lub NA.
 
 <p align="center">
